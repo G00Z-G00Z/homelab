@@ -11,9 +11,3 @@ services:
       - TZ=America/Monterrey
     volumes:
       - ./config:/config
-    networks:
-      - homelab-net
-
-networks:
-  homelab-net:
-    external: true
