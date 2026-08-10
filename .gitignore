@@ -1,3 +1,5 @@
 **/*.env
 pihole/etc-pihole/*
 !pihole/etc-pihole/.gitkeep
+grocy/config/log
+grocy/config
