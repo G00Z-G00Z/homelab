@@ -16,9 +16,10 @@ declare -a PORTS=(
     "${PORT_DNS_UDP:-53}/udp"
     "${PORT_HTTP:-80}/tcp"
     "${PORT_HTTPS:-443}/tcp"
+    "9283/tcp" # Grocy
 )
 
-echo "Adding UFW rules for Pi-hole..."
+echo "Adding UFW rules for homelab services..."
 
 for port in "${PORTS[@]}"; do
     if ! sudo ufw status | grep -q "$port"; then
